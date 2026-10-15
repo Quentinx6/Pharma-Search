@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: pharmasearch
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pharmasearch
+    username: pharma
+    password: pharma
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+pharmasearch:
+  import:
+    file: data/CIS_bdpm.txt
